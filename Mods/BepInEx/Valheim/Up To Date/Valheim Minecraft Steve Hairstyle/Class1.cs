@@ -4,11 +4,11 @@ using Jotunn.Entities;
 using Jotunn.Managers;
 using Jotunn.Utils;
 using UnityEngine;
-
 namespace Valheim_Minecraft_Steve_Hairstyle
 {
-    [BepInPlugin("kenx00x.MinecraftSteveHairstyle", "Minecraft Steve Hairstyle", "1.1.1")]
+    [BepInPlugin("kenx00x.MinecraftSteveHairstyle", "Minecraft Steve Hairstyle", "1.1.2")]
     [BepInProcess("valheim.exe")]
+    [BepInDependency(Jotunn.Main.ModGuid)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Patch)]
     public class MinecraftSteveHairstyle : BaseUnityPlugin
     {
