@@ -242,5 +242,8 @@
   <ItemGroup>
     <EmbeddedResource Include="hairminecraftsteve" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="hairminecraftsteve.blend" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
