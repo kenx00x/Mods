@@ -8,7 +8,7 @@ using Jotunn.Utils;
 using UnityEngine;
 namespace Valheim_Zero_Two_Hair
 {
-    [BepInPlugin("kenx00x.ZeroTwoHair", "Zero Two Hair", "1.1.0")]
+    [BepInPlugin("kenx00x.ZeroTwoHair", "Zero Two Hair", "1.1.1")]
     [BepInProcess("valheim.exe")]
     [BepInDependency(Jotunn.Main.ModGuid)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Patch)]
