@@ -8,7 +8,7 @@ using Jotunn.Utils;
 using UnityEngine;
 namespace Valheim_Zero_Two_Hair
 {
-    [BepInPlugin("kenx00x.ZeroTwoHair", "Zero Two Hair", "1.0.2")]
+    [BepInPlugin("kenx00x.ZeroTwoHair", "Zero Two Hair", "1.1.0")]
     [BepInProcess("valheim.exe")]
     [BepInDependency(Jotunn.Main.ModGuid)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Patch)]
@@ -18,6 +18,9 @@ namespace Valheim_Zero_Two_Hair
         {
             AssetBundle embeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("hairzerotwo", typeof(ZeroTwoHair).Assembly);
             GameObject zeroTwoHair = embeddedResourceBundle.LoadAsset<GameObject>("Assets/customitems/zerotwo/hairzerotwo.prefab");
+
+            zeroTwoHair.transform.Find("attach_skin").Find("hair4").gameObject.AddComponent<ReassignBoneWeigthsToNewMesh>();
+
             Jotunn.Logger.LogInfo($"Embedded resources: {string.Join(",", typeof(ZeroTwoHair).Assembly.GetManifestResourceNames())}");
 
             CustomItem customItem = new CustomItem(zeroTwoHair, false);
