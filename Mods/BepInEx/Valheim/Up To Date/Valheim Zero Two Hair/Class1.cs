@@ -1,5 +1,5 @@
 ﻿//credits to Sentimental-Dream for the hair https://www.deviantart.com/sentimental-dream
-//credits to ichiibal for the hair https://www.deviantart.com/ichiibal
+//credits to ichiibal for the horns https://www.deviantart.com/ichiibal
 using BepInEx;
 using Jotunn.Configs;
 using Jotunn.Entities;
