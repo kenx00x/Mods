@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Trivia", "Mods\MelonLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Marine In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Marine In Shop\BTD6 Marine In Shop.csproj", "{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valheim Chat Tweaks", "Mods\BepInEx\Valheim\Up To Date\Valheim Chat Tweaks\Valheim Chat Tweaks.csproj", "{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -235,6 +241,7 @@ Global
 		{D17257E0-5983-4097-AA12-F6C63D9C5EA3} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{7DD4DEBF-EAC0-4A45-9508-979CAB4AE489} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4} = {A643DF52-2371-4047-8D69-2A6D2019112A}
+		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E} = {A288F19B-0EDA-4ACB-85ED-E2D6F725A331}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7A2361B-5DC9-407F-8514-5E3E457D80B4}
