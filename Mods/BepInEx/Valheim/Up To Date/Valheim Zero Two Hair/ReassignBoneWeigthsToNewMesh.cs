@@ -4,7 +4,7 @@ public class ReassignBoneWeigthsToNewMesh : MonoBehaviour
     public string rootBoneName = "Hips";
     void Start()
     {
-        Transform newArmature = transform.parent.parent.parent.Find("Visual").Find("Armature").transform;
+        Transform newArmature = transform.parent.parent.Find("Armature").transform;
         SkinnedMeshRenderer rend = gameObject.GetComponent<SkinnedMeshRenderer>();
         Transform[] bones = rend.bones;
         rend.rootBone = newArmature.Find(rootBoneName);
