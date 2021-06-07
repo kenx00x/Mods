@@ -122,8 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="hairzerotwo" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="hairzerotwo.blend" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
