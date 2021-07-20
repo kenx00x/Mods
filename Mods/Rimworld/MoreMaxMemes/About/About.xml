@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+	<name>More Max Memes</name>
+	<author>kenx00x</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>With this mod you can have way more memes with ideology (0-100 memes).</description>
+	<packageId>kenx00x.MoreMaxMemes</packageId>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>
