@@ -24,6 +24,12 @@ namespace MoreMaxMemes
             listing_Standard.Label("Maximum meme value");
             string text2 = settings.maximumMeme.ToString();
             listing_Standard.TextFieldNumeric(ref settings.maximumMeme, ref text2);
+            listing_Standard.Label("NPC initial minimum meme value");
+            string text3 = settings.NPCInitialMinimumMeme.ToString();
+            listing_Standard.TextFieldNumeric(ref settings.NPCInitialMinimumMeme, ref text3);
+            listing_Standard.Label("NPC initial maximum meme value");
+            string text4 = settings.NPCInitialMaximumMeme.ToString();
+            listing_Standard.TextFieldNumeric(ref settings.NPCInitialMaximumMeme, ref text4);
             listing_Standard.End();
         }
         public override string SettingsCategory()
@@ -34,20 +40,25 @@ namespace MoreMaxMemes
     [HarmonyPatch(typeof(IdeoFoundation), "InitPrecepts")]
     public class InitPrecepts_Patch
     {
-        public static void Prefix(ref IntRange ___MemeCountRangeAbsolute)
+        public static void Prefix(ref IntRange ___MemeCountRangeAbsolute, ref IntRange ___MemeCountRangeNPCInitial)
         {
             MoreMaxMemesSettings settings = LoadedModManager.GetMod<MoreMaxMemes>().GetSettings<MoreMaxMemesSettings>();
             ___MemeCountRangeAbsolute = new IntRange(settings.minimumMeme, settings.maximumMeme);
+            ___MemeCountRangeNPCInitial = new IntRange(settings.NPCInitialMinimumMeme, settings.NPCInitialMaximumMeme);
         }
     }
     public class MoreMaxMemesSettings : ModSettings
     {
         public int minimumMeme = 0;
         public int maximumMeme = 100;
+        public int NPCInitialMinimumMeme = 1;
+        public int NPCInitialMaximumMeme = 3;
         public override void ExposeData()
         {
             Scribe_Values.Look(ref minimumMeme, "MinimumMeme", 0);
             Scribe_Values.Look(ref maximumMeme, "MaximumMeme", 100);
+            Scribe_Values.Look(ref NPCInitialMinimumMeme, "NPCInitialMinimumMeme", 1);
+            Scribe_Values.Look(ref NPCInitialMaximumMeme, "NPCInitialMaximumMeme", 3);
         }
     }
 }
