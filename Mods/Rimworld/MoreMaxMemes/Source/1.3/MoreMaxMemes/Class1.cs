@@ -49,7 +49,6 @@ namespace MoreMaxMemes
             ___MemeCountRangeAbsolute = new IntRange(settings.minimumMeme, settings.maximumMeme);
             ___MemeCountRangeNPCInitial = new IntRange(settings.NPCInitialMinimumMeme, settings.NPCInitialMaximumMeme);
             PreceptDefOf.AnimalVenerated.maxCount = settings.maximumVeneratedAnimals;
-
         }
     }
     public class MoreMaxMemesSettings : ModSettings
