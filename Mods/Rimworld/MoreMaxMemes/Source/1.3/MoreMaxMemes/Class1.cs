@@ -39,16 +39,28 @@ namespace MoreMaxMemes
         {
             return "More Max Memes";
         }
+        public static void MyMethod(ref IntRange ___MemeCountRangeAbsolute,ref IntRange ___MemeCountRangeNPCInitial)
+        {
+            MoreMaxMemesSettings settings = LoadedModManager.GetMod<MoreMaxMemes>().GetSettings<MoreMaxMemesSettings>();
+            ___MemeCountRangeAbsolute = new IntRange(settings.minimumMeme, settings.maximumMeme);
+            ___MemeCountRangeNPCInitial = new IntRange(settings.NPCInitialMinimumMeme, settings.NPCInitialMaximumMeme);
+            PreceptDefOf.AnimalVenerated.maxCount = settings.maximumVeneratedAnimals;
+        }
     }
     [HarmonyPatch(typeof(IdeoFoundation), "InitPrecepts")]
     public class InitPrecepts_Patch
     {
         public static void Prefix(ref IntRange ___MemeCountRangeAbsolute, ref IntRange ___MemeCountRangeNPCInitial)
         {
-            MoreMaxMemesSettings settings = LoadedModManager.GetMod<MoreMaxMemes>().GetSettings<MoreMaxMemesSettings>();
-            ___MemeCountRangeAbsolute = new IntRange(settings.minimumMeme, settings.maximumMeme);
-            ___MemeCountRangeNPCInitial = new IntRange(settings.NPCInitialMinimumMeme, settings.NPCInitialMaximumMeme);
-            PreceptDefOf.AnimalVenerated.maxCount = settings.maximumVeneratedAnimals;
+            MoreMaxMemes.MyMethod(ref ___MemeCountRangeAbsolute,ref ___MemeCountRangeNPCInitial);
+        }
+    }
+    [HarmonyPatch(typeof(IdeoFoundation), "ExposeData")]
+    public class ExposeData_Patch
+    {
+        public static void Prefix(ref IntRange ___MemeCountRangeAbsolute, ref IntRange ___MemeCountRangeNPCInitial)
+        {
+            MoreMaxMemes.MyMethod(ref ___MemeCountRangeAbsolute, ref ___MemeCountRangeNPCInitial);
         }
     }
     public class MoreMaxMemesSettings : ModSettings
