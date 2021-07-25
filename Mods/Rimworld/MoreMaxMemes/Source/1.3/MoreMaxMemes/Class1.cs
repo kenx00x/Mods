@@ -18,19 +18,19 @@ namespace MoreMaxMemes
         {
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(inRect);
-            listing_Standard.Label("Minimum meme value");
+            listing_Standard.Label("Minimum meme value (Vanilla = 1, Default = 0)");
             string text = settings.minimumMeme.ToString();
             listing_Standard.TextFieldNumeric(ref settings.minimumMeme, ref text);
-            listing_Standard.Label("Maximum meme value");
+            listing_Standard.Label("Maximum meme value (Vanilla = 4, Default = 100)");
             string text2 = settings.maximumMeme.ToString();
             listing_Standard.TextFieldNumeric(ref settings.maximumMeme, ref text2);
-            listing_Standard.Label("NPC initial minimum meme value");
+            listing_Standard.Label("NPC initial minimum meme value (Vanilla/Default = 1)");
             string text3 = settings.NPCInitialMinimumMeme.ToString();
             listing_Standard.TextFieldNumeric(ref settings.NPCInitialMinimumMeme, ref text3);
-            listing_Standard.Label("NPC initial maximum meme value");
+            listing_Standard.Label("NPC initial maximum meme value (Vanilla/Default = 3)");
             string text4 = settings.NPCInitialMaximumMeme.ToString();
             listing_Standard.TextFieldNumeric(ref settings.NPCInitialMaximumMeme, ref text4);
-            listing_Standard.Label("Maximum venerated animals value");
+            listing_Standard.Label("Maximum venerated animals value (Vanilla/Default = 18)");
             string text5 = settings.maximumVeneratedAnimals.ToString();
             listing_Standard.TextFieldNumeric(ref settings.maximumVeneratedAnimals, ref text5);
             listing_Standard.End();
