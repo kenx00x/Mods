@@ -1,9 +1,9 @@
 ﻿using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Main;
-using HarmonyLib;
-using MelonLoader;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
+using MelonLoader;
 [assembly: MelonInfo(typeof(BTD6_Infinite_Monkey_Knowledge.Class1), "Infinite Monkey Knowledge", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Infinite_Monkey_Knowledge
