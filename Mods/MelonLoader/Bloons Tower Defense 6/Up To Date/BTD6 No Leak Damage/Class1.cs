@@ -1,9 +1,9 @@
 ﻿using Assets.Scripts.Models.Bloons;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.Map;
-using Harmony;
+using HarmonyLib;
 using MelonLoader;
-[assembly: MelonInfo(typeof(NoLeakDamage.Class1), "No leak damage", "1.1.0", "kenx00x")]
+[assembly: MelonInfo(typeof(NoLeakDamage.Class1), "No leak damage", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace NoLeakDamage
 {
