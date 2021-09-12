@@ -1,8 +1,8 @@
 ﻿using Assets.Scripts.Data;
 using Assets.Scripts.Unity;
-using Harmony;
+using HarmonyLib;
 using MelonLoader;
-[assembly: MelonInfo(typeof(BTD6_Blons_Corner_Map_Unlocker.Class1), "Blons/Corner Map Unlocker", "1.1.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Blons_Corner_Map_Unlocker.Class1), "Blons/Corner Map Unlocker", "1.2.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Blons_Corner_Map_Unlocker
 {
