@@ -8,7 +8,7 @@ using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
 using HarmonyLib;
 using MelonLoader;
-[assembly: MelonInfo(typeof(freeTowers.Class1), "free towers and upgrades", "1.3.0", "kenx00x")]
+[assembly: MelonInfo(typeof(freeTowers.Class1), "free towers and upgrades", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace freeTowers
 {
