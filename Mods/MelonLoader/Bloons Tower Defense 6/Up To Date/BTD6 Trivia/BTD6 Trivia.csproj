@@ -37,6 +37,9 @@
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
+    <Reference Include="BloonsTD6 Mod Helper">
+      <HintPath>D:\Steam\steamapps\common\BloonsTD6\Mods\BloonsTD6 Mod Helper.dll</HintPath>
+    </Reference>
     <Reference Include="IBM.Data.DB2">
       <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\IBM.Data.DB2.dll</HintPath>
     </Reference>

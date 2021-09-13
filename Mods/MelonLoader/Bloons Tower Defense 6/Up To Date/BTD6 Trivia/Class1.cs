@@ -1,25 +1,24 @@
 ﻿using Assets.Scripts.Models.Profile;
-using Assets.Scripts.Simulation;
+using Assets.Scripts.Simulation.SimulationBehaviors;
 using Assets.Scripts.Unity.UI_New.InGame;
 using Assets.Scripts.Unity.UI_New.Main;
-using Harmony;
+using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
 using MelonLoader;
 using Newtonsoft.Json.Linq;
-using System.IO;
 using System.Net;
 using UnityEngine;
-[assembly: MelonInfo(typeof(Trivia.Class1), "Trivia", "1.4.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Trivia.Class1), "Trivia", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace Trivia
 {
-    public class Class1 : MelonMod
+    public class Class1 : BloonsTD6Mod
     {
-        public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\Trivia";
-        public static string config = $"{dir}\\config.txt";
-        public static double multiplier = 25;
-        public static double easyMultiplier = 1;
-        public static double mediumMultiplier = 1;
-        public static double hardMultiplier = 1;
+        public static ModSettingDouble moneyPerCorrectAnswer = 25;
+        public static ModSettingDouble easyMultiplier = 1;
+        public static ModSettingDouble mediumMultiplier = 1;
+        public static ModSettingDouble hardMultiplier = 1;
         public static string difficulty = "";
         public static string question = "";
         public static string[] answers = new string[4];
@@ -28,48 +27,6 @@ namespace Trivia
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Trivia loaded");
-            Directory.CreateDirectory($"{dir}");
-            if (File.Exists(config))
-            {
-                MelonLogger.Msg("Reading config file");
-                using (StreamReader sr = File.OpenText(config))
-                {
-                    int line = 0;
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        switch (line)
-                        {
-                            case 0:
-                                multiplier = double.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                                break;
-                            case 1:
-                                easyMultiplier = double.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                                break;
-                            case 2:
-                                mediumMultiplier = double.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                                break;
-                            case 3:
-                                hardMultiplier = double.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                                break;
-                        }
-                        line++;
-                    }
-                }
-                MelonLogger.Msg("Done reading");
-            }
-            else
-            {
-                MelonLogger.Msg("Creating config file");
-                using (StreamWriter sw = File.CreateText(config))
-                {
-                    sw.WriteLine("Multiplier=25");
-                    sw.WriteLine("EasyMultiplier=1");
-                    sw.WriteLine("MediumMultiplier=1");
-                    sw.WriteLine("HardMultiplier=1");
-                }
-                MelonLogger.Msg("Done Creating");
-            }
         }
         public override void OnGUI()
         {
@@ -116,13 +73,13 @@ namespace Trivia
                 switch (difficulty)
                 {
                     case "Easy":
-                        addedMoney = staticRound * multiplier * easyMultiplier;
+                        addedMoney = staticRound * moneyPerCorrectAnswer * easyMultiplier;
                         break;
                     case "Medium":
-                        addedMoney = staticRound * multiplier * mediumMultiplier;
+                        addedMoney = staticRound * moneyPerCorrectAnswer * mediumMultiplier;
                         break;
                     case "Hard":
-                        addedMoney = staticRound * multiplier * hardMultiplier;
+                        addedMoney = staticRound * moneyPerCorrectAnswer * hardMultiplier;
                         break;
                 }
                 InGame.Bridge.simulation.cashManagers.entries[0].value.cash.Value += addedMoney;
@@ -138,15 +95,15 @@ namespace Trivia
             }
             question = "";
         }
-        [HarmonyPatch(typeof(Simulation), "OnRoundEnd")]
+        [HarmonyPatch(typeof(BonusCashPerRound), "OnRoundEnd")]
         public class Simulation_Patch
         {
             [HarmonyPostfix]
-            public static void Postfix(int round)
+            public static void Postfix(int roundArrayIndex)
             {
                 if (question == "")
                 {
-                    staticRound = round + 2;
+                    staticRound = roundArrayIndex + 2;
                     System.Random rand = new System.Random();
                     string json = new WebClient().DownloadString("https://opentdb.com/api.php?amount=1");
                     JObject rss = JObject.Parse(json);
