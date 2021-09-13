@@ -5,45 +5,21 @@ using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Simulation.Input;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Upgrade;
-using Harmony;
+using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
-using System.IO;
-[assembly: MelonInfo(typeof(Banana_Farmer_In_Shop.Class1), "Banana Farmer In Shop", "1.2.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Banana_Farmer_In_Shop.Class1), "Banana Farmer In Shop", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace Banana_Farmer_In_Shop
 {
-    public class Class1 : MelonMod
+    public class Class1 : BloonsTD6Mod
     {
-        public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\BananaFarmerInShop";
-        public static string config = $"{dir}\\config.txt";
-        public static int bananaFarmerCost = 550;
+        public static ModSettingInt price = new ModSettingInt(550);
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Banana Farmer In Shop mod loaded");
-            Directory.CreateDirectory($"{dir}");
-            if (File.Exists(config))
-            {
-                MelonLogger.Msg("Reading config file");
-                using (StreamReader sr = File.OpenText(config))
-                {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        bananaFarmerCost = int.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                    }
-                }
-                MelonLogger.Msg("Done reading");
-            }
-            else
-            {
-                MelonLogger.Msg("Creating config file");
-                using (StreamWriter sw = File.CreateText(config))
-                {
-                    sw.WriteLine("BananaFarmerCost=550");
-                }
-                MelonLogger.Msg("Done Creating");
-            }
         }
         [HarmonyPatch(typeof(ProfileModel), "Validate")]
         public class ProfileModel_Patch
@@ -74,7 +50,7 @@ namespace Banana_Farmer_In_Shop
                 {
                     powerModel.tower.icon = powerModel.icon;
                 }
-                powerModel.tower.cost = bananaFarmerCost;
+                powerModel.tower.cost = price;
                 powerModel.tower.towerSet = "Support";
             }
         }
