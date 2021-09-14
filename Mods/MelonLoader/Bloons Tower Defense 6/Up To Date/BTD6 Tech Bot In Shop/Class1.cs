@@ -5,45 +5,21 @@ using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Simulation.Input;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Upgrade;
-using Harmony;
+using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
-using System.IO;
-[assembly: MelonInfo(typeof(BTD6_Tech_Bot_In_Shop.Class1), "Tech Bot In Shop", "1.2.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Tech_Bot_In_Shop.Class1), "Tech Bot In Shop", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Tech_Bot_In_Shop
 {
-    public class Class1 : MelonMod
+    public class Class1 : BloonsTD6Mod
     {
-        public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\TechBotInShop";
-        public static string config = $"{dir}\\config.txt";
-        public static int techBotCost = 500;
+        public static ModSettingInt price = new ModSettingInt(500);
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Tech Bot In Shop mod loaded");
-            Directory.CreateDirectory($"{dir}");
-            if (File.Exists(config))
-            {
-                MelonLogger.Msg("Reading config file");
-                using (StreamReader sr = File.OpenText(config))
-                {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        techBotCost = int.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                    }
-                }
-                MelonLogger.Msg("Done reading");
-            }
-            else
-            {
-                MelonLogger.Msg("Creating config file");
-                using (StreamWriter sw = File.CreateText(config))
-                {
-                    sw.WriteLine("TechBotCost=500");
-                }
-                MelonLogger.Msg("Done Creating");
-            }
         }
         [HarmonyPatch(typeof(ProfileModel), "Validate")]
         public class ProfileModel_Patch
@@ -74,7 +50,7 @@ namespace BTD6_Tech_Bot_In_Shop
                 {
                     powerModel.tower.icon = powerModel.icon;
                 }
-                powerModel.tower.cost = techBotCost;
+                powerModel.tower.cost = price;
                 powerModel.tower.towerSet = "Support";
             }
         }
