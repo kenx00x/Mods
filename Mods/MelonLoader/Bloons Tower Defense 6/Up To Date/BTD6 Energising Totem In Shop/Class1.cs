@@ -5,45 +5,21 @@ using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Simulation.Input;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Upgrade;
-using Harmony;
+using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
-using System.IO;
-[assembly: MelonInfo(typeof(BTD6_Energising_Totem_In_Shop.Class1), "Energising Totem In Shop", "1.2.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Energising_Totem_In_Shop.Class1), "Energising Totem In Shop", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Energising_Totem_In_Shop
 {
-    public class Class1 : MelonMod
+    public class Class1 : BloonsTD6Mod
     {
-        public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\EnergisingTotemInShop";
-        public static string config = $"{dir}\\config.txt";
-        public static int EnergisingTotemCost = 630;
+        public static ModSettingInt price = new ModSettingInt(630);
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Energising Totem In Shop mod loaded");
-            Directory.CreateDirectory($"{dir}");
-            if (File.Exists(config))
-            {
-                MelonLogger.Msg("Reading config file");
-                using (StreamReader sr = File.OpenText(config))
-                {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        EnergisingTotemCost = int.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                    }
-                }
-                MelonLogger.Msg("Done reading");
-            }
-            else
-            {
-                MelonLogger.Msg("Creating config file");
-                using (StreamWriter sw = File.CreateText(config))
-                {
-                    sw.WriteLine("EnergisingTotemCost=630");
-                }
-                MelonLogger.Msg("Done Creating");
-            }
         }
         [HarmonyPatch(typeof(ProfileModel), "Validate")]
         public class ProfileModel_Patch
@@ -74,7 +50,7 @@ namespace BTD6_Energising_Totem_In_Shop
                 {
                     powerModel.tower.icon = powerModel.icon;
                 }
-                powerModel.tower.cost = EnergisingTotemCost;
+                powerModel.tower.cost = price;
                 powerModel.tower.towerSet = "Support";
             }
         }
@@ -82,24 +58,22 @@ namespace BTD6_Energising_Totem_In_Shop
         public class TowerInventory_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
+            public static void Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
             {
                 ShopTowerDetailsModel powerDetails = new ShopTowerDetailsModel("EnergisingTotem", 1, 0, 0, 0, -1, 0, null);
                 allTowersInTheGame.Add(powerDetails);
-                return true;
             }
         }
         [HarmonyPatch(typeof(UpgradeScreen), "UpdateUi")]
         public class UpgradeScreen_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref string towerId)
+            public static void Prefix(ref string towerId)
             {
                 if (towerId.Contains("EnergisingTotem"))
                 {
                     towerId = "DartMonkey";
                 }
-                return true;
             }
         }
     }
