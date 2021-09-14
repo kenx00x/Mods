@@ -6,45 +6,21 @@ using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Simulation.Input;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Upgrade;
-using Harmony;
+using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
-using System.IO;
-[assembly: MelonInfo(typeof(BTD6_Sentry_In_Shop.Class1), "Sentry In Shop", "1.4.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Sentry_In_Shop.Class1), "Sentry In Shop", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Sentry_In_Shop
 {
-    public class Class1 : MelonMod
+    public class Class1 : BloonsTD6Mod
     {
-        public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\SentryInShop";
-        public static string config = $"{dir}\\config.txt";
-        public static int SentryCost = 100;
+        public static ModSettingInt price = new ModSettingInt(100);
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Sentry In Shop mod loaded");
-            Directory.CreateDirectory($"{dir}");
-            if (File.Exists(config))
-            {
-                MelonLogger.Msg("Reading config file");
-                using (StreamReader sr = File.OpenText(config))
-                {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        SentryCost = int.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                    }
-                }
-                MelonLogger.Msg("Done reading");
-            }
-            else
-            {
-                MelonLogger.Msg("Creating config file");
-                using (StreamWriter sw = File.CreateText(config))
-                {
-                    sw.WriteLine("SentryCost=100");
-                }
-                MelonLogger.Msg("Done Creating");
-            }
         }
         [HarmonyPatch(typeof(ProfileModel), "Validate")]
         public class ProfileModel_Patch
@@ -75,7 +51,7 @@ namespace BTD6_Sentry_In_Shop
                 {
                     towerModel.icon = towerModel.portrait;
                 }
-                towerModel.cost = SentryCost;
+                towerModel.cost = price;
                 towerModel.towerSet = "Support";
                 towerModel.radius = 6;
                 towerModel.radiusSquared = 36;
@@ -95,24 +71,22 @@ namespace BTD6_Sentry_In_Shop
         public class TowerInventory_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
+            public static void Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
             {
                 ShopTowerDetailsModel towerDetails = new ShopTowerDetailsModel("Sentry", 1, 0, 0, 0, -1, 0, null);
                 allTowersInTheGame.Add(towerDetails);
-                return true;
             }
         }
         [HarmonyPatch(typeof(UpgradeScreen), "UpdateUi")]
         public class UpgradeScreen_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref string towerId)
+            public static void Prefix(ref string towerId)
             {
                 if (towerId.Contains("Sentry"))
                 {
                     towerId = "DartMonkey";
                 }
-                return true;
             }
         }
     }

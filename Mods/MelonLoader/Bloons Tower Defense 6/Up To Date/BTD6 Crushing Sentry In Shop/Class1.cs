@@ -6,45 +6,21 @@ using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Simulation.Input;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Upgrade;
-using Harmony;
+using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.ModOptions;
+using HarmonyLib;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
-using System.IO;
-[assembly: MelonInfo(typeof(BTD6_Crushing_Sentry_In_Shop.Class1), "Crushing Sentry In Shop", "1.4.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Crushing_Sentry_In_Shop.Class1), "Crushing Sentry In Shop", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Crushing_Sentry_In_Shop
 {
-    public class Class1 : MelonMod
+    public class Class1 : BloonsTD6Mod
     {
-        public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\CrushingSentryInShop";
-        public static string config = $"{dir}\\config.txt";
-        public static int SentryCrushingCost = 500;
+        public static ModSettingInt price = new ModSettingInt(500);
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Crushing Sentry In Shop mod loaded");
-            Directory.CreateDirectory($"{dir}");
-            if (File.Exists(config))
-            {
-                MelonLogger.Msg("Reading config file");
-                using (StreamReader sr = File.OpenText(config))
-                {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        SentryCrushingCost = int.Parse(s.Substring(s.IndexOf(char.Parse("=")) + 1));
-                    }
-                }
-                MelonLogger.Msg("Done reading");
-            }
-            else
-            {
-                MelonLogger.Msg("Creating config file");
-                using (StreamWriter sw = File.CreateText(config))
-                {
-                    sw.WriteLine("CrushingSentryCost=500");
-                }
-                MelonLogger.Msg("Done Creating");
-            }
         }
         [HarmonyPatch(typeof(ProfileModel), "Validate")]
         public class ProfileModel_Patch
@@ -75,7 +51,7 @@ namespace BTD6_Crushing_Sentry_In_Shop
                 {
                     towerModel.icon = towerModel.portrait;
                 }
-                towerModel.cost = SentryCrushingCost;
+                towerModel.cost = price;
                 towerModel.towerSet = "Support";
                 towerModel.radius = 6;
                 towerModel.radiusSquared = 36;
@@ -95,24 +71,22 @@ namespace BTD6_Crushing_Sentry_In_Shop
         public class TowerInventory_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
+            public static void Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
             {
                 ShopTowerDetailsModel towerDetails = new ShopTowerDetailsModel("SentryCrushing", 1, 0, 0, 0, -1, 0, null);
                 allTowersInTheGame.Add(towerDetails);
-                return true;
             }
         }
         [HarmonyPatch(typeof(UpgradeScreen), "UpdateUi")]
         public class UpgradeScreen_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref string towerId)
+            public static void Prefix(ref string towerId)
             {
                 if (towerId.Contains("SentryCrushing"))
                 {
                     towerId = "DartMonkey";
                 }
-                return true;
             }
         }
     }
