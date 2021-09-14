@@ -10,7 +10,7 @@ using BTD_Mod_Helper.Api.ModOptions;
 using HarmonyLib;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
-[assembly: MelonInfo(typeof(Banana_Farmer_In_Shop.Class1), "Banana Farmer In Shop", "2.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Banana_Farmer_In_Shop.Class1), "Banana Farmer In Shop", "2.0.1", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace Banana_Farmer_In_Shop
 {
@@ -58,24 +58,22 @@ namespace Banana_Farmer_In_Shop
         public class TowerInventory_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
+            public static void Prefix(ref List<TowerDetailsModel> allTowersInTheGame)
             {
                 ShopTowerDetailsModel powerDetails = new ShopTowerDetailsModel("BananaFarmer", 1, 0, 0, 0, -1, 0, null);
                 allTowersInTheGame.Add(powerDetails);
-                return true;
             }
         }
         [HarmonyPatch(typeof(UpgradeScreen), "UpdateUi")]
         public class UpgradeScreen_Patch
         {
             [HarmonyPrefix]
-            public static bool Prefix(ref string towerId)
+            public static void Prefix(ref string towerId)
             {
                 if (towerId.Contains("BananaFarmer"))
                 {
                     towerId = "DartMonkey";
                 }
-                return true;
             }
         }
     }
