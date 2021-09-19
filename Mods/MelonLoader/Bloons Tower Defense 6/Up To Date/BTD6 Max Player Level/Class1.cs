@@ -1,10 +1,9 @@
-﻿using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.UI_New.Main;
+﻿using Assets.Scripts.Models.Profile;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
 using HarmonyLib;
 using MelonLoader;
-[assembly: MelonInfo(typeof(BTD6_Max_Player_level.Class1), "Max Player Level", "1.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Max_Player_level.Class1), "Max Player Level", "1.1.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Max_Player_level
 {
@@ -16,15 +15,15 @@ namespace BTD6_Max_Player_level
         {
             MelonLogger.Msg("Max Player Level loaded!");
         }
-        [HarmonyPatch(typeof(MainMenu), "Open")]
-        public class TitleScreen_Patch
+        [HarmonyPatch(typeof(ProfileModel), "Validate")]
+        public class ProfileModel_Patch
         {
             [HarmonyPostfix]
-            public static void Postfix()
+            public static void Postfix(ProfileModel __instance)
             {
-                Game.instance.playerService.Player.Data.xp.Value = xp;
-                Game.instance.playerService.Player.Data.veteranXp.Value = VeteranXp;
-                Game.instance.playerService.Player.CheckAndCorrectLevelBasedOnPlayerXp();
+                __instance.xp.Value = xp;
+                __instance.veteranXp.Value = VeteranXp;
+                __instance.veteranRank.Value = ((VeteranXp - (VeteranXp % 20000000)) / 20000000) + 1;
             }
         }
     }
