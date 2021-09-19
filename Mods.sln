@@ -91,6 +91,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E17FD9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Max Player Level", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Max Player Level\BTD6 Max Player Level.csproj", "{04E9AF87-D086-4918-9291-0BC3A8B1307D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Tower XP", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Infinite Tower XP\BTD6 Infinite Tower XP.csproj", "{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -221,6 +223,10 @@ Global
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -267,6 +273,7 @@ Global
 		{21D5DF76-54F4-4267-A7BA-5296FE410CF6} = {E17FD963-4FEE-4632-9B67-055C38EAA9D1}
 		{E17FD963-4FEE-4632-9B67-055C38EAA9D1} = {4617FFCA-CCB0-4881-8274-A9410C94F141}
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D} = {A643DF52-2371-4047-8D69-2A6D2019112A}
+		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7A2361B-5DC9-407F-8514-5E3E457D80B4}
