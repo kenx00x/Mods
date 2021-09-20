@@ -4,7 +4,7 @@ using HarmonyLib;
 using MelonLoader;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
-[assembly: MelonInfo(typeof(BTD6_Infinite_Tower_XP.Class1), "Infinite Tower XP", "1.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Infinite_Tower_XP.Class1), "Infinite Tower XP", "1.1.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Infinite_Tower_XP
 {
@@ -21,6 +21,10 @@ namespace BTD6_Infinite_Tower_XP
             [HarmonyPostfix]
             public static void Postfix()
             {
+                for (int i = 0; i < Game.instance.model.towers.Count; i++)
+                {
+                    Game.instance.playerService.Player.AddTowerXP(Game.instance.model.towers[i].name,100);
+                }
                 foreach (var item in Game.instance.playerService.Player.Data.towerXp)
                 {
                     Game.instance.playerService.Player.Data.towerXp[item.key].Value = xp;
