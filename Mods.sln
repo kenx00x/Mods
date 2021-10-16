@@ -99,6 +99,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Bloons", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Towers", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Unlock Big Towers\BTD6 Unlock Big Towers.csproj", "{38346587-AEAA-45A1-A32E-60A2012FCB5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Small Bloons", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\Unlock Small Bloons\BTD6 Unlock Small Bloons.csproj", "{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Small Towers", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\Unlock Small Towers\BTD6 Unlock Small Towers.csproj", "{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +249,14 @@ Global
 		{38346587-AEAA-45A1-A32E-60A2012FCB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38346587-AEAA-45A1-A32E-60A2012FCB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38346587-AEAA-45A1-A32E-60A2012FCB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -295,6 +307,8 @@ Global
 		{B0FC0268-66AA-45B5-B0D5-0A50568B7A64} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{FFEBDF7A-673A-4281-A438-FAD1B22304FB} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{38346587-AEAA-45A1-A32E-60A2012FCB5B} = {A643DF52-2371-4047-8D69-2A6D2019112A}
+		{FCC2F32E-062D-4A07-B9EF-6C36D167A16F} = {A643DF52-2371-4047-8D69-2A6D2019112A}
+		{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7A2361B-5DC9-407F-8514-5E3E457D80B4}
