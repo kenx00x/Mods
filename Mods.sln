@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Tower XP", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Lych Boss In Sandbox", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Lych Boss In Sandbox\BTD6 Lych Boss In Sandbox.csproj", "{B0FC0268-66AA-45B5-B0D5-0A50568B7A64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Bloons", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Unlock Big Bloons\BTD6 Unlock Big Bloons.csproj", "{FFEBDF7A-673A-4281-A438-FAD1B22304FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{B0FC0268-66AA-45B5-B0D5-0A50568B7A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0FC0268-66AA-45B5-B0D5-0A50568B7A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0FC0268-66AA-45B5-B0D5-0A50568B7A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFEBDF7A-673A-4281-A438-FAD1B22304FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFEBDF7A-673A-4281-A438-FAD1B22304FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFEBDF7A-673A-4281-A438-FAD1B22304FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFEBDF7A-673A-4281-A438-FAD1B22304FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -281,6 +287,7 @@ Global
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{B0FC0268-66AA-45B5-B0D5-0A50568B7A64} = {A643DF52-2371-4047-8D69-2A6D2019112A}
+		{FFEBDF7A-673A-4281-A438-FAD1B22304FB} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7A2361B-5DC9-407F-8514-5E3E457D80B4}
