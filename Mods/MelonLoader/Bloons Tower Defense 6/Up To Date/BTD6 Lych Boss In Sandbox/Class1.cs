@@ -4,7 +4,8 @@ using Il2CppSystem.Collections.Generic;
 using Assets.Scripts.Models.Bloons;
 using HarmonyLib;
 using Assets.Scripts.Unity.UI_New.InGame.BloonMenu;
-[assembly: MelonInfo(typeof(BTD6_Lych_Boss_In_Sandbox.Class1), "Lych Boss In Sandbox", "1.0.0", "kenx00x")]
+using Assets.Scripts.Simulation.Bloons.Behaviors;
+[assembly: MelonInfo(typeof(BTD6_Lych_Boss_In_Sandbox.Class1), "Lych Boss In Sandbox", "1.0.1", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Lych_Boss_In_Sandbox
 {
@@ -28,6 +29,15 @@ namespace BTD6_Lych_Boss_In_Sandbox
                     }
                 }
                 return true;
+            }
+        }
+        [HarmonyPatch(typeof(SpawnDeathAnim), "LayersExhaused")]
+        public class MapLoadddeddlr_Patch
+        {
+            [HarmonyPrefix]
+            public static bool Prefix()
+            {
+                return false;
             }
         }
     }
