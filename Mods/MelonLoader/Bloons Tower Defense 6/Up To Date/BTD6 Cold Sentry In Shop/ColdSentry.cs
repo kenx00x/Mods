@@ -6,19 +6,19 @@ using BTD_Mod_Helper.Api.Towers;
 using Il2CppSystem.Collections.Generic;
 using UnhollowerBaseLib;
 
-namespace BTD6_Boom_Sentry_In_Shop
+namespace BTD6_Cold_Sentry_In_Shop
 {
-    public class BoomSentry : ModTower
+    public class ColdSentry : ModTower
     {
-        public override SpriteReference PortraitReference => Game.instance.model.GetTowerWithName("SentryBoom").portrait;
-        public override SpriteReference IconReference => Game.instance.model.GetTowerWithName("SentryBoom").portrait;
+        public override SpriteReference PortraitReference => Game.instance.model.GetTowerWithName("SentryCold").portrait;
+        public override SpriteReference IconReference => Game.instance.model.GetTowerWithName("SentryCold").portrait;
         public override string TowerSet => SUPPORT;
-        public override string BaseTower => TowerType.SentryBoom;
+        public override string BaseTower => TowerType.SentryCold;
         public override int Cost => Main.Price;
         public override int TopPathUpgrades => 0;
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
-        public override string Description => "Boom Sentry";
+        public override string Description => "Cold Sentry";
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
