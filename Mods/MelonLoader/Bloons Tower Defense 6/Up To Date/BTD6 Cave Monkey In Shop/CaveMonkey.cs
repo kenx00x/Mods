@@ -2,6 +2,7 @@
 using Assets.Scripts.Unity;
 using Assets.Scripts.Utils;
 using BTD_Mod_Helper.Api.Towers;
+
 namespace BTD6_Cave_Monkey_In_Shop
 {
     public class CaveMonkey : ModTower
@@ -15,6 +16,7 @@ namespace BTD6_Cave_Monkey_In_Shop
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
         public override string Description => "Cave Monkey";
+
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         { }
     }
