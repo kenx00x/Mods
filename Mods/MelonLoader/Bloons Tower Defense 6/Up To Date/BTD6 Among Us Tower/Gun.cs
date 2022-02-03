@@ -10,7 +10,7 @@ namespace BTD6_Among_Us_Tower
         public override string Name => "Gun";
         public override string DisplayName => "Gun";
         public override string Description => "Don't bring a knife to a gun fight, bring this gun instead!";
-        public override int Cost => 200;
+        public override int Cost => Main.GunPrice;
         public override int Path => MIDDLE;
         public override int Tier => 2;
         public override string Icon => "Gun_Icon";

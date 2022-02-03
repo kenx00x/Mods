@@ -10,6 +10,8 @@ namespace BTD6_Among_Us_Tower
     public class Main : BloonsTD6Mod
     {
         public static readonly ModSettingInt CrewMatePrice = new ModSettingInt(100);
+        public static readonly ModSettingInt KnifePrice = new ModSettingInt(69);
+        public static readonly ModSettingInt GunPrice = new ModSettingInt(200);
 
         public override void OnApplicationStart()
         {

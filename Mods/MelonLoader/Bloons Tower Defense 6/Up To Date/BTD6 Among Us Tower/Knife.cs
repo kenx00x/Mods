@@ -11,7 +11,7 @@ namespace BTD6_Among_Us_Tower
         public override string Name => "Knife";
         public override string DisplayName => "Knife";
         public override string Description => "The crewmate decided to betray us and become an imposter.";
-        public override int Cost => 69;
+        public override int Cost => Main.KnifePrice;
         public override int Path => MIDDLE;
         public override int Tier => 1;
         public override string Icon => "Knife_Icon";
