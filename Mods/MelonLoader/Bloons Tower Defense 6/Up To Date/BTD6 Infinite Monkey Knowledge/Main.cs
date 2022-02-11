@@ -5,11 +5,11 @@ using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
 using HarmonyLib;
 using MelonLoader;
-using Main = BTD6_Infinite_Monkey_Money.Main;
+using Main = BTD6_Infinite_Monkey_Knowledge.Main;
 
-[assembly: MelonInfo(typeof(Main), "Infinite Monkey Money", "3.0.1", "kenx00x")]
+[assembly: MelonInfo(typeof(Main), "Infinite Monkey Knowledge", "3.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
-namespace BTD6_Infinite_Monkey_Money
+namespace BTD6_Infinite_Monkey_Knowledge
 {
     public class Main : BloonsTD6Mod
     {
@@ -17,7 +17,7 @@ namespace BTD6_Infinite_Monkey_Money
 
         public override void OnApplicationStart()
         {
-            MelonLogger.Msg("Infinite Monkey Money loaded!");
+            MelonLogger.Msg("Infinite Monkey Knowledge loaded!");
         }
 
         [HarmonyPatch(typeof(MainMenu), "Open")]
@@ -26,7 +26,7 @@ namespace BTD6_Infinite_Monkey_Money
             [HarmonyPostfix]
             public static void Postfix()
             {
-                Game.instance.playerService.Player.Data.monkeyMoney.Value = Amount;
+                Game.instance.playerService.Player.Data.KnowledgePoints = Amount;
             }
         }
 

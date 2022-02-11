@@ -32,16 +32,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BloonsTD6 Mod Helper">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\Mods\BloonsTD6 Mod Helper.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\Mods\BloonsTD6 Mod Helper.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaKiwi.Common">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.Common.dll</HintPath>
     </Reference>
     <Reference Include="NinjaKiwi.LiNK">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.LiNK.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.LiNK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -91,41 +94,71 @@
       <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
       <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
       <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.XRModule.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityStore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
