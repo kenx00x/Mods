@@ -1,6 +1,10 @@
 # Mods
 
 In this repository I have all my mods for games.
-Currently I develop mods for unity games using either BepInEx or MelonLoader.
 
-If a mod is in an outdated folder that means that mod is not updated and will likely not be updated.
+Every game is in a different branch.
+<a href="https://github.com/kenx00x/Mods/tree/Bloons_Tower_Defense_6">Bloons Tower Defense 6</a>
+<a href="https://github.com/kenx00x/Mods/tree/Noita">Noita</a>
+<a href="https://github.com/kenx00x/Mods/tree/Phasmophobia">Phasmophobia</a>
+<a href="https://github.com/kenx00x/Mods/tree/Rimworld">Rimworld</a>
+<a href="https://github.com/kenx00x/Mods/tree/Valheim">Valheim</a>
