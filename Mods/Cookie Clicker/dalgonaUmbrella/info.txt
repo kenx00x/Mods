@@ -1,0 +1,11 @@
+{
+ "Name": "Dalgona Umbrella",
+ "ID": "dalgona umbrella",
+ "Author": "Kenx00x",
+ "Description": "This mod replaces the cookie you click on with the dalgona umbrella candy featured in squid game.",
+ "ModVersion": 3,
+ "GameVersion": 2.043,
+ "Date": "03/01/2022",
+ "Disabled": 1,
+ "Workshop": "2692269819"
+}
