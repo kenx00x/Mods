@@ -1,6 +1,5 @@
 # Mods
 
-In this repository I have all my mods for games.
-Currently I develop mods for unity games using either BepInEx or MelonLoader.
+In this branch are all my mods for Phasmophobia.
 
-If a mod is in an outdated folder that means that mod is not updated and will likely not be updated.
+<a href="https://github.com/kenx00x/Mods/tree/master">Go back to main page</a>
