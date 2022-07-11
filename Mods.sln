@@ -3,109 +3,75 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BepInEx", "BepInEx", "{F0F1F8C9-6B3C-4726-AD96-E75387C94ACA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MelonLoader", "MelonLoader", "{376C2A90-46D6-4AB0-941B-7B4B52B2E697}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Valheim", "Valheim", "{BE617016-F119-4B46-8DC9-BDD318CC3E49}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bloons Tower Defense 6", "Bloons Tower Defense 6", "{4A2CF83C-7A29-4CC7-AB00-997C9899050D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valheim Zero Two Hair", "Mods\BepInEx\Valheim\Up To Date\Valheim Zero Two Hair\Valheim Zero Two Hair.csproj", "{B30870F3-79C5-4FAB-890F-01B2CC9926B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 All Trophy Store Items Unlocker", "Mods\Bloons Tower Defense 6\Maintained\BTD6 All Trophy Store Items Unlocker\BTD6 All Trophy Store Items Unlocker.csproj", "{212FB473-559B-4948-A0CA-1456C0A5A79A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valheim Women With Beards", "Mods\BepInEx\Valheim\Up To Date\Valheim Women With Beards\Valheim Women With Beards.csproj", "{B9840C9D-480E-4A5F-809E-CC8BB0C15EEE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maintained", "Maintained", "{A643DF52-2371-4047-8D69-2A6D2019112A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valheim Minecraft Steve Hairstyle", "Mods\BepInEx\Valheim\Up To Date\Valheim Minecraft Steve Hairstyle\Valheim Minecraft Steve Hairstyle.csproj", "{E7598DCC-A037-436A-A5AA-FC790027E7A0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unmaintained", "Unmaintained", "{A641D7FB-ACB4-40D9-B8C1-56E40ADDB2D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 All Trophy Store Items Unlocker", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 All Trophy Store Items Unlocker\BTD6 All Trophy Store Items Unlocker.csproj", "{212FB473-559B-4948-A0CA-1456C0A5A79A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Free Towers", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Free Towers\BTD6 Free Towers.csproj", "{47C90BCA-8340-4A74-8462-2EE2EC0E0EDB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Phasmophobia", "Phasmophobia", "{59FEEE29-8310-4C7F-8668-051FE7718FDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Discord RPC", "Mods\Bloons Tower Defense 6\UnMaintained\BTD6 Discord RPC\BTD6 Discord RPC.csproj", "{9060D923-4A66-4468-A6A1-EB76B7CCB9B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suicide", "Mods\MelonLoader\Phasmophobia\Outdated\Suicide\Suicide.csproj", "{B5B63DFB-AD87-40DC-86A7-1C50CECFC939}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 No Leak Damage", "Mods\Bloons Tower Defense 6\Maintained\BTD6 No Leak Damage\BTD6 No Leak Damage.csproj", "{7DA4F7CF-F13A-4942-AB04-44FB1F6678E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0 sanity", "Mods\MelonLoader\Phasmophobia\Outdated\0 sanity\0 sanity.csproj", "{E927CF0C-1BE4-4344-8FC7-B815844C5E4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Golden Bloon In Sandbox", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Golden Bloon In Sandbox\BTD6 Golden Bloon In Sandbox.csproj", "{2E0C2CC7-99AB-44DA-A3BF-14BB2A260436}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Up to Date", "Up to Date", "{A643DF52-2371-4047-8D69-2A6D2019112A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Golden Bloon On Every Round", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Golden Bloon On Every Round\BTD6 Golden Bloon On Every Round.csproj", "{83EB4046-5C4D-44E2-9D55-98A663FF95B2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outdated", "Outdated", "{A641D7FB-ACB4-40D9-B8C1-56E40ADDB2D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Energy Sentry In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Energy Sentry In Shop\BTD6 Energy Sentry In Shop.csproj", "{77BC65E2-F2B4-4703-8A95-6EEC24BC5403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Free Towers", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Free Towers\BTD6 Free Towers.csproj", "{47C90BCA-8340-4A74-8462-2EE2EC0E0EDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Paragon Sentry In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Paragon Sentry In Shop\BTD6 Paragon Sentry In Shop.csproj", "{D273A371-950D-40B7-A496-478B53A6403C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Discord RPC", "Mods\MelonLoader\Bloons Tower Defense 6\Outdated\BTD6 Discord RPC\BTD6 Discord RPC.csproj", "{9060D923-4A66-4468-A6A1-EB76B7CCB9B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Blons Corner Map Unlocker", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Blons Corner Map Unlocker\BTD6 Blons Corner Map Unlocker.csproj", "{3FE0A798-8CAB-4095-AB03-DF3DEE0C88D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 No Leak Damage", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 No Leak Damage\BTD6 No Leak Damage.csproj", "{7DA4F7CF-F13A-4942-AB04-44FB1F6678E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Monkey Knowledge", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Infinite Monkey Knowledge\BTD6 Infinite Monkey Knowledge.csproj", "{B307E73B-50AD-4B1E-B2DC-8CA0E1531285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Golden Bloon In Sandbox", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Golden Bloon In Sandbox\BTD6 Golden Bloon In Sandbox.csproj", "{2E0C2CC7-99AB-44DA-A3BF-14BB2A260436}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Monkey Money", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Infinite Monkey Money\BTD6 Infinite Monkey Money.csproj", "{470515C3-76EB-4BD6-81A0-CBAAF3DA5CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Golden Bloon On Every Round", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Golden Bloon On Every Round\BTD6 Golden Bloon On Every Round.csproj", "{83EB4046-5C4D-44E2-9D55-98A663FF95B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Cold Sentry In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Cold Sentry In Shop\BTD6 Cold Sentry In Shop.csproj", "{5FB72301-0BD4-4D05-87B1-526D57C65762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Energy Sentry In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Energy Sentry In Shop\BTD6 Energy Sentry In Shop.csproj", "{77BC65E2-F2B4-4703-8A95-6EEC24BC5403}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Crushing Sentry In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Crushing Sentry In Shop\BTD6 Crushing Sentry In Shop.csproj", "{F360E3FB-373C-4E55-B363-F122766EFFD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Paragon Sentry In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Paragon Sentry In Shop\BTD6 Paragon Sentry In Shop.csproj", "{D273A371-950D-40B7-A496-478B53A6403C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Boom Sentry In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Boom Sentry In Shop\BTD6 Boom Sentry In Shop.csproj", "{62B64074-92BF-4822-9057-A386A6612C64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Blons Corner Map Unlocker", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Blons Corner Map Unlocker\BTD6 Blons Corner Map Unlocker.csproj", "{3FE0A798-8CAB-4095-AB03-DF3DEE0C88D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Sentry In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Sentry In Shop\BTD6 Sentry In Shop.csproj", "{4946F039-43B2-405D-8B32-EFD147367F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Monkey Knowledge", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Infinite Monkey Knowledge\BTD6 Infinite Monkey Knowledge.csproj", "{B307E73B-50AD-4B1E-B2DC-8CA0E1531285}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Pontoon In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Pontoon In Shop\BTD6 Pontoon In Shop.csproj", "{2982F4DB-9570-45AE-B6C6-B1806D22D76D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outdated", "Outdated", "{84D585FA-6C9F-4FCC-806C-4FF208CD16EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Portable Lake In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Portable Lake In Shop\BTD6 Portable Lake In Shop.csproj", "{727E3B5E-8995-4C57-8DBB-B761ACC1BF72}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Up To Date", "Up To Date", "{A288F19B-0EDA-4ACB-85ED-E2D6F725A331}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Energising Totem In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Energising Totem In Shop\BTD6 Energising Totem In Shop.csproj", "{3268A291-8F89-4FF6-AC55-A2ECD3A1DBF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Monkey Money", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Infinite Monkey Money\BTD6 Infinite Monkey Money.csproj", "{470515C3-76EB-4BD6-81A0-CBAAF3DA5CDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Banana Farmer In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Banana Farmer In Shop\BTD6 Banana Farmer In Shop.csproj", "{CA5C5F1D-7C0B-4563-9C0A-38AD78B01F59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Cold Sentry In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Cold Sentry In Shop\BTD6 Cold Sentry In Shop.csproj", "{5FB72301-0BD4-4D05-87B1-526D57C65762}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Tech Bot In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Tech Bot In Shop\BTD6 Tech Bot In Shop.csproj", "{2A4C31C9-2E99-48CE-B06B-9DD7C0F6C238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Crushing Sentry In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Crushing Sentry In Shop\BTD6 Crushing Sentry In Shop.csproj", "{F360E3FB-373C-4E55-B363-F122766EFFD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Cave Monkey In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Cave Monkey In Shop\BTD6 Cave Monkey In Shop.csproj", "{D17257E0-5983-4097-AA12-F6C63D9C5EA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Boom Sentry In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Boom Sentry In Shop\BTD6 Boom Sentry In Shop.csproj", "{62B64074-92BF-4822-9057-A386A6612C64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Trivia", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Trivia\BTD6 Trivia.csproj", "{7DD4DEBF-EAC0-4A45-9508-979CAB4AE489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Sentry In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Sentry In Shop\BTD6 Sentry In Shop.csproj", "{4946F039-43B2-405D-8B32-EFD147367F77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Marine In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Marine In Shop\BTD6 Marine In Shop.csproj", "{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Pontoon In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Pontoon In Shop\BTD6 Pontoon In Shop.csproj", "{2982F4DB-9570-45AE-B6C6-B1806D22D76D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Max Player Level", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Max Player Level\BTD6 Max Player Level.csproj", "{04E9AF87-D086-4918-9291-0BC3A8B1307D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Portable Lake In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Portable Lake In Shop\BTD6 Portable Lake In Shop.csproj", "{727E3B5E-8995-4C57-8DBB-B761ACC1BF72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Tower XP", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Infinite Tower XP\BTD6 Infinite Tower XP.csproj", "{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Energising Totem In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Energising Totem In Shop\BTD6 Energising Totem In Shop.csproj", "{3268A291-8F89-4FF6-AC55-A2ECD3A1DBF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Lych Boss In Sandbox", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Lych Boss In Sandbox\BTD6 Lych Boss In Sandbox.csproj", "{B0FC0268-66AA-45B5-B0D5-0A50568B7A64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Banana Farmer In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Banana Farmer In Shop\BTD6 Banana Farmer In Shop.csproj", "{CA5C5F1D-7C0B-4563-9C0A-38AD78B01F59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Bloons", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Unlock Big Bloons\BTD6 Unlock Big Bloons.csproj", "{FFEBDF7A-673A-4281-A438-FAD1B22304FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Tech Bot In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Tech Bot In Shop\BTD6 Tech Bot In Shop.csproj", "{2A4C31C9-2E99-48CE-B06B-9DD7C0F6C238}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Towers", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Unlock Big Towers\BTD6 Unlock Big Towers.csproj", "{38346587-AEAA-45A1-A32E-60A2012FCB5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Cave Monkey In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Cave Monkey In Shop\BTD6 Cave Monkey In Shop.csproj", "{D17257E0-5983-4097-AA12-F6C63D9C5EA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Small Bloons", "Mods\Bloons Tower Defense 6\Maintained\Unlock Small Bloons\BTD6 Unlock Small Bloons.csproj", "{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Trivia", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Trivia\BTD6 Trivia.csproj", "{7DD4DEBF-EAC0-4A45-9508-979CAB4AE489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Small Towers", "Mods\Bloons Tower Defense 6\Maintained\Unlock Small Towers\BTD6 Unlock Small Towers.csproj", "{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Marine In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Marine In Shop\BTD6 Marine In Shop.csproj", "{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Among Us Tower", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Among Us Tower\BTD6 Among Us Tower.csproj", "{38EB2B15-D61A-4F9C-ABB0-39DC509DC0EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valheim Chat Tweaks", "Mods\BepInEx\Valheim\Up To Date\Valheim Chat Tweaks\Valheim Chat Tweaks.csproj", "{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\MoreMaxMemes\Source\1.3\MoreMaxMemes\MoreMaxMemes.csproj", "{482DA951-DF8E-4D3E-B220-028FB8FBB62F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rimworld", "Rimworld", "{557B5916-01BE-4C53-A778-830D1A40B480}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MoreMaxMemes", "MoreMaxMemes", "{4617FFCA-CCB0-4881-8274-A9410C94F141}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3", "1.3", "{21D5DF76-54F4-4267-A7BA-5296FE410CF6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E17FD963-4FEE-4632-9B67-055C38EAA9D1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Max Player Level", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Max Player Level\BTD6 Max Player Level.csproj", "{04E9AF87-D086-4918-9291-0BC3A8B1307D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Infinite Tower XP", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Infinite Tower XP\BTD6 Infinite Tower XP.csproj", "{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Lych Boss In Sandbox", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Lych Boss In Sandbox\BTD6 Lych Boss In Sandbox.csproj", "{B0FC0268-66AA-45B5-B0D5-0A50568B7A64}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Bloons", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Unlock Big Bloons\BTD6 Unlock Big Bloons.csproj", "{FFEBDF7A-673A-4281-A438-FAD1B22304FB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Big Towers", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Unlock Big Towers\BTD6 Unlock Big Towers.csproj", "{38346587-AEAA-45A1-A32E-60A2012FCB5B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Small Bloons", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\Unlock Small Bloons\BTD6 Unlock Small Bloons.csproj", "{FCC2F32E-062D-4A07-B9EF-6C36D167A16F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Unlock Small Towers", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\Unlock Small Towers\BTD6 Unlock Small Towers.csproj", "{2A16B1EC-2176-4631-B869-0EEE8A0FB9F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Among Us Tower", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Among Us Tower\BTD6 Among Us Tower.csproj", "{38EB2B15-D61A-4F9C-ABB0-39DC509DC0EC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Mini Sun Avatar In Shop", "Mods\MelonLoader\Bloons Tower Defense 6\Up To Date\BTD6 Mini Sun Avatar In Shop\BTD6 Mini Sun Avatar In Shop.csproj", "{CF5DF315-6AEB-4201-BD96-0B6DA2B7B6F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTD6 Mini Sun Avatar In Shop", "Mods\Bloons Tower Defense 6\Maintained\BTD6 Mini Sun Avatar In Shop\BTD6 Mini Sun Avatar In Shop.csproj", "{CF5DF315-6AEB-4201-BD96-0B6DA2B7B6F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,30 +79,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B30870F3-79C5-4FAB-890F-01B2CC9926B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B30870F3-79C5-4FAB-890F-01B2CC9926B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B30870F3-79C5-4FAB-890F-01B2CC9926B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B30870F3-79C5-4FAB-890F-01B2CC9926B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B9840C9D-480E-4A5F-809E-CC8BB0C15EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9840C9D-480E-4A5F-809E-CC8BB0C15EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9840C9D-480E-4A5F-809E-CC8BB0C15EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9840C9D-480E-4A5F-809E-CC8BB0C15EEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7598DCC-A037-436A-A5AA-FC790027E7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7598DCC-A037-436A-A5AA-FC790027E7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7598DCC-A037-436A-A5AA-FC790027E7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7598DCC-A037-436A-A5AA-FC790027E7A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{212FB473-559B-4948-A0CA-1456C0A5A79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{212FB473-559B-4948-A0CA-1456C0A5A79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{212FB473-559B-4948-A0CA-1456C0A5A79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{212FB473-559B-4948-A0CA-1456C0A5A79A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5B63DFB-AD87-40DC-86A7-1C50CECFC939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5B63DFB-AD87-40DC-86A7-1C50CECFC939}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5B63DFB-AD87-40DC-86A7-1C50CECFC939}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5B63DFB-AD87-40DC-86A7-1C50CECFC939}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E927CF0C-1BE4-4344-8FC7-B815844C5E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E927CF0C-1BE4-4344-8FC7-B815844C5E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E927CF0C-1BE4-4344-8FC7-B815844C5E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E927CF0C-1BE4-4344-8FC7-B815844C5E4D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47C90BCA-8340-4A74-8462-2EE2EC0E0EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47C90BCA-8340-4A74-8462-2EE2EC0E0EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C90BCA-8340-4A74-8462-2EE2EC0E0EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -225,14 +171,6 @@ Global
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{482DA951-DF8E-4D3E-B220-028FB8FBB62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{482DA951-DF8E-4D3E-B220-028FB8FBB62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{482DA951-DF8E-4D3E-B220-028FB8FBB62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{482DA951-DF8E-4D3E-B220-028FB8FBB62F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -274,15 +212,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BE617016-F119-4B46-8DC9-BDD318CC3E49} = {F0F1F8C9-6B3C-4726-AD96-E75387C94ACA}
-		{4A2CF83C-7A29-4CC7-AB00-997C9899050D} = {376C2A90-46D6-4AB0-941B-7B4B52B2E697}
-		{B30870F3-79C5-4FAB-890F-01B2CC9926B0} = {A288F19B-0EDA-4ACB-85ED-E2D6F725A331}
-		{B9840C9D-480E-4A5F-809E-CC8BB0C15EEE} = {A288F19B-0EDA-4ACB-85ED-E2D6F725A331}
-		{E7598DCC-A037-436A-A5AA-FC790027E7A0} = {A288F19B-0EDA-4ACB-85ED-E2D6F725A331}
 		{212FB473-559B-4948-A0CA-1456C0A5A79A} = {A643DF52-2371-4047-8D69-2A6D2019112A}
-		{59FEEE29-8310-4C7F-8668-051FE7718FDB} = {376C2A90-46D6-4AB0-941B-7B4B52B2E697}
-		{B5B63DFB-AD87-40DC-86A7-1C50CECFC939} = {84D585FA-6C9F-4FCC-806C-4FF208CD16EF}
-		{E927CF0C-1BE4-4344-8FC7-B815844C5E4D} = {84D585FA-6C9F-4FCC-806C-4FF208CD16EF}
 		{A643DF52-2371-4047-8D69-2A6D2019112A} = {4A2CF83C-7A29-4CC7-AB00-997C9899050D}
 		{A641D7FB-ACB4-40D9-B8C1-56E40ADDB2D0} = {4A2CF83C-7A29-4CC7-AB00-997C9899050D}
 		{47C90BCA-8340-4A74-8462-2EE2EC0E0EDB} = {A643DF52-2371-4047-8D69-2A6D2019112A}
@@ -294,8 +224,6 @@ Global
 		{D273A371-950D-40B7-A496-478B53A6403C} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{3FE0A798-8CAB-4095-AB03-DF3DEE0C88D6} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{B307E73B-50AD-4B1E-B2DC-8CA0E1531285} = {A643DF52-2371-4047-8D69-2A6D2019112A}
-		{84D585FA-6C9F-4FCC-806C-4FF208CD16EF} = {59FEEE29-8310-4C7F-8668-051FE7718FDB}
-		{A288F19B-0EDA-4ACB-85ED-E2D6F725A331} = {BE617016-F119-4B46-8DC9-BDD318CC3E49}
 		{470515C3-76EB-4BD6-81A0-CBAAF3DA5CDD} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{5FB72301-0BD4-4D05-87B1-526D57C65762} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{F360E3FB-373C-4E55-B363-F122766EFFD8} = {A643DF52-2371-4047-8D69-2A6D2019112A}
@@ -309,11 +237,6 @@ Global
 		{D17257E0-5983-4097-AA12-F6C63D9C5EA3} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{7DD4DEBF-EAC0-4A45-9508-979CAB4AE489} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{A0132E0B-0CEE-4139-B407-F9E7D32AA4F4} = {A643DF52-2371-4047-8D69-2A6D2019112A}
-		{0D62A76A-CF0B-4DB8-B02C-B18E21D9219E} = {A288F19B-0EDA-4ACB-85ED-E2D6F725A331}
-		{482DA951-DF8E-4D3E-B220-028FB8FBB62F} = {21D5DF76-54F4-4267-A7BA-5296FE410CF6}
-		{4617FFCA-CCB0-4881-8274-A9410C94F141} = {557B5916-01BE-4C53-A778-830D1A40B480}
-		{21D5DF76-54F4-4267-A7BA-5296FE410CF6} = {E17FD963-4FEE-4632-9B67-055C38EAA9D1}
-		{E17FD963-4FEE-4632-9B67-055C38EAA9D1} = {4617FFCA-CCB0-4881-8274-A9410C94F141}
 		{04E9AF87-D086-4918-9291-0BC3A8B1307D} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{E57F9E5F-4FC3-4CEA-B663-D4625B3BC282} = {A643DF52-2371-4047-8D69-2A6D2019112A}
 		{B0FC0268-66AA-45B5-B0D5-0A50568B7A64} = {A643DF52-2371-4047-8D69-2A6D2019112A}
