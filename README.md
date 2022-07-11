@@ -8,3 +8,4 @@ Every game is in a different branch. <br>
 <a href="https://github.com/kenx00x/Mods/tree/Phasmophobia">Phasmophobia</a><br>
 <a href="https://github.com/kenx00x/Mods/tree/Rimworld">Rimworld</a><br>
 <a href="https://github.com/kenx00x/Mods/tree/Valheim">Valheim</a><br>
+<a href="https://github.com/kenx00x/Mods/tree/Cookie_Clicker">Cookie Clicker</a><br>
