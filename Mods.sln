@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\MoreMaxMemes\Source\1.3\MoreMaxMemes\MoreMaxMemes.csproj", "{482DA951-DF8E-4D3E-B220-028FB8FBB62F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\Unmaintained\MoreMaxMemes\Source\1.3\MoreMaxMemes\MoreMaxMemes.csproj", "{482DA951-DF8E-4D3E-B220-028FB8FBB62F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rimworld", "Rimworld", "{557B5916-01BE-4C53-A778-830D1A40B480}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3", "1.3", "{21D5DF76-54F4-4267-A7BA-5296FE410CF6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E17FD963-4FEE-4632-9B67-055C38EAA9D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unmaintained", "Unmaintained", "{4C659A78-9DE1-4617-8F56-3CE23995919B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +31,10 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{482DA951-DF8E-4D3E-B220-028FB8FBB62F} = {21D5DF76-54F4-4267-A7BA-5296FE410CF6}
-		{4617FFCA-CCB0-4881-8274-A9410C94F141} = {557B5916-01BE-4C53-A778-830D1A40B480}
+		{4617FFCA-CCB0-4881-8274-A9410C94F141} = {4C659A78-9DE1-4617-8F56-3CE23995919B}
 		{21D5DF76-54F4-4267-A7BA-5296FE410CF6} = {E17FD963-4FEE-4632-9B67-055C38EAA9D1}
 		{E17FD963-4FEE-4632-9B67-055C38EAA9D1} = {4617FFCA-CCB0-4881-8274-A9410C94F141}
+		{4C659A78-9DE1-4617-8F56-3CE23995919B} = {557B5916-01BE-4C53-A778-830D1A40B480}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7A2361B-5DC9-407F-8514-5E3E457D80B4}
