@@ -1,1 +1,1 @@
-MoreMaxMemes is unmaintained because <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2554423180">a better mod is available.</a>
+MoreMaxMemes is unmaintained because <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2554423180">a better mod exists.</a>
