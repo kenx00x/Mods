@@ -9,3 +9,4 @@ Every game is in a different branch. <br>
 <a href="https://github.com/kenx00x/Mods/tree/Rimworld">Rimworld</a><br>
 <a href="https://github.com/kenx00x/Mods/tree/Valheim">Valheim</a><br>
 <a href="https://github.com/kenx00x/Mods/tree/Cookie_Clicker">Cookie Clicker</a><br>
+<a href="https://github.com/kenx00x/Mods/tree/Mount_%26_Blade_II_Bannerlord">Mount & Blade II: Bannerlord</a><br>
