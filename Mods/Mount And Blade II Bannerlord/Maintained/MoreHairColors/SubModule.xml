@@ -1,0 +1,18 @@
+<Module>
+	<Name value="More Hair Colors"/>
+	<Id value="MoreHairColors"/>
+	<Version value="v1.0.0"/>
+	<DefaultModule value="false"/>
+	<SingleplayerModule value="true"/>
+	<MultiplayerModule value="false"/>
+	<Official value="false"/>
+	<DependedModules>
+		<DependedModule Id="Native" DependentVersion="e1.8.0"/>
+		<DependedModule Id="SandBoxCore" DependentVersion="e1.8.0"/>
+		<DependedModule Id="Sandbox" DependentVersion="e1.8.0"/>
+		<DependedModule Id="CustomBattle" DependentVersion="e1.8.0"/>
+		<DependedModule Id="StoryMode" DependentVersion="e1.8.0"/>
+	</DependedModules>
+	<SubModules/>
+	<Xmls/>
+</Module>
