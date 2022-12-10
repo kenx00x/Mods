@@ -11,7 +11,7 @@ namespace Valheim_Chat_Tweaks
     [BepInPlugin("kenx00x.ChatTweaks", "Chat Tweaks", "1.2.0")]
     [BepInProcess("valheim.exe")]
     [BepInDependency(Jotunn.Main.ModGuid)]
-    [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Patch)]
+    [NetworkCompatibility(CompatibilityLevel.NotEnforced, VersionStrictness.Patch)]
     public class ChatTweaks : BaseUnityPlugin
     {
         static public ConfigEntry<bool> enableAlwaysShout;
