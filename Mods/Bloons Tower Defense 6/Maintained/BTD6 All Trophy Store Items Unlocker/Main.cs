@@ -1,9 +1,9 @@
-﻿using Assets.Main.Scenes;
-using Assets.Scripts.Data;
-using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.UI_New.Main;
+﻿using System.Collections.Generic;
 using HarmonyLib;
-using Il2CppSystem.Collections.Generic;
+using Il2CppAssets.Main.Scenes;
+using Il2CppAssets.Scripts.Data;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.UI_New.Main;
 using MelonLoader;
 using Main = BTD6_All_Trophy_Store_Items_Unlocker.Main;
 
