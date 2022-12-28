@@ -7,7 +7,7 @@ using Il2CppAssets.Scripts.Unity.UI_New.Main;
 using MelonLoader;
 using Main = BTD6_All_Trophy_Store_Items_Unlocker.Main;
 
-[assembly: MelonInfo(typeof(Main), "All Trophy Store Items Unlocker", "4.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Main), "All Trophy Store Items Unlocker", "4.1.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace BTD6_All_Trophy_Store_Items_Unlocker
