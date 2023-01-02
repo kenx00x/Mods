@@ -1,10 +1,11 @@
-﻿using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.UI_New.Main;
-using HarmonyLib;
+﻿using HarmonyLib;
 using MelonLoader;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
-[assembly: MelonInfo(typeof(BTD6_Infinite_Tower_XP.Class1), "Infinite Tower XP", "1.1.0", "kenx00x")]
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.UI_New.Main;
+
+[assembly: MelonInfo(typeof(BTD6_Infinite_Tower_XP.Class1), "Infinite Tower XP", "1.2.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Infinite_Tower_XP
 {
