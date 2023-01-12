@@ -1,14 +1,14 @@
-﻿using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Upgrades;
-using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.Bridge;
-using Assets.Scripts.Unity.Map;
-using Assets.Scripts.Unity.UI_New.InGame.TowerSelectionMenu;
-using BTD_Mod_Helper;
+﻿using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
 using HarmonyLib;
+using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Upgrades;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Bridge;
+using Il2CppAssets.Scripts.Unity.Map;
+using Il2CppAssets.Scripts.Unity.UI_New.InGame.TowerSelectionMenu;
 using MelonLoader;
-[assembly: MelonInfo(typeof(freeTowers.Class1), "free towers and upgrades", "2.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(freeTowers.Class1), "free towers and upgrades", "2.1.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace freeTowers
 {
