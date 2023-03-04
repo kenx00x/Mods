@@ -1,12 +1,9 @@
-﻿using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.UI_New.Main;
-using BTD_Mod_Helper;
+﻿using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
-using HarmonyLib;
 using MelonLoader;
 using Main = BTD6_All_The_Towers_In_Shop.Main;
 
-[assembly: MelonInfo(typeof(Main), "All The Towers In Shop", "1.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Main), "All The Towers In Shop", "2.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace BTD6_All_The_Towers_In_Shop
@@ -35,17 +32,5 @@ namespace BTD6_All_The_Towers_In_Shop
         {
             LoggerInstance.Msg("All The Towers In Shop mod loaded");
         }
-        //[HarmonyPatch(typeof(MainMenu), "Open")]
-        //public class TitleScreenPatch
-        //{
-        //    [HarmonyPostfix]
-        //    public static void Postfix()
-        //    {
-        //        foreach (var tower in Game.instance.model.towers)
-        //        {
-        //            MelonLogger.Msg(tower.name);
-        //        }
-        //    }
-        //}
     }
 }    
