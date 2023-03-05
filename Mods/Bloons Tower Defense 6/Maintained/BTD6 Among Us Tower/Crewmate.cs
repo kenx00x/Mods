@@ -1,7 +1,8 @@
-﻿using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Weapons;
-using BTD_Mod_Helper.Api.Towers;
+﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Weapons;
+using Il2CppAssets.Scripts.Models.TowerSets;
 
 namespace BTD6_Among_Us_Tower
 {
@@ -11,8 +12,8 @@ namespace BTD6_Among_Us_Tower
         public override bool Use2DModel => true;
         public override string Portrait => "Crewmate Icon Portrait";
         public override string Icon => "Crewmate Icon Portrait";
-        public override string TowerSet => PRIMARY;
-        public override string BaseTower => TowerType.DartMonkey;
+		public override TowerSet TowerSet => TowerSet.Primary;
+		public override string BaseTower => TowerType.DartMonkey;
         public override int Cost => Main.CrewMatePrice;
         public override int TopPathUpgrades => 0;
         public override int MiddlePathUpgrades => 2;

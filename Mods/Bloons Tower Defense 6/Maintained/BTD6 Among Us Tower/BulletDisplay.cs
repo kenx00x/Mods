@@ -1,5 +1,5 @@
-﻿using Assets.Scripts.Unity.Display;
-using BTD_Mod_Helper.Api.Display;
+﻿using BTD_Mod_Helper.Api.Display;
+using Il2CppAssets.Scripts.Unity.Display;
 
 namespace BTD6_Among_Us_Tower
 {
