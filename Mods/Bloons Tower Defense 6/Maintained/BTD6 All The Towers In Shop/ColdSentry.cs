@@ -15,7 +15,7 @@ namespace BTD6_All_The_Towers_In_Shop
         public override SpriteReference IconReference => Game.instance.model.GetTowerWithName("SentryCold").portrait;
 		public override TowerSet TowerSet => TowerSet.Support;
 		public override string BaseTower => TowerType.SentryCold;
-        public override int Cost => Main.ColdSentryPrice;
+        public override int Cost => 650;
         public override int TopPathUpgrades => 0;
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
