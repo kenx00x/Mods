@@ -15,7 +15,7 @@ namespace BTD6_All_The_Towers_In_Shop
         public override SpriteReference IconReference => Game.instance.model.GetTowerWithName("SentryBoom").portrait;
 		public override TowerSet TowerSet => TowerSet.Support;
 		public override string BaseTower => TowerType.SentryBoom;
-        public override int Cost => Main.BoomSentryPrice;
+        public override int Cost => 1000;
         public override int TopPathUpgrades => 0;
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
