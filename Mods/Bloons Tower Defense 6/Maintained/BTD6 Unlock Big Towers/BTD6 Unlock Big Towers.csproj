@@ -31,20 +31,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+    <Reference Include="0Harmony">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\net35\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="Il2Cppmscorlib">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppNinjaKiwi.LiNK">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Il2CppNinjaKiwi.LiNK.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\net35\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="NinjaKiwi.Common">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.Common.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\cpp2il_out\NinjaKiwi.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaKiwi.Common.Attribution">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\cpp2il_out\NinjaKiwi.Common.Attribution.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaKiwi.CT.API">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\cpp2il_out\NinjaKiwi.CT.API.dll</HintPath>
     </Reference>
     <Reference Include="NinjaKiwi.LiNK">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.LiNK.dll</HintPath>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\cpp2il_out\NinjaKiwi.LiNK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,9 +63,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnhollowerBaseLib">
-      <HintPath>D:\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
