@@ -248,9 +248,14 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>E:\steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="VanillaMemesExpanded">
+      <HintPath>E:\steam\steamapps\workshop\content\294100\2636329500\1.4\Assemblies\VanillaMemesExpanded.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="VanillaMemesExpandedPatch.cs" />
+    <Compile Include="MainPatches.cs" />
+    <Compile Include="MoreMaxMemes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

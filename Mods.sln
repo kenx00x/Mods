@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\Unmaintained\MoreMaxMemes\Source\1.3\MoreMaxMemes\MoreMaxMemes.csproj", "{482DA951-DF8E-4D3E-B220-028FB8FBB62F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\Maintained\MoreMaxMemes\Source\1.3\MoreMaxMemes\MoreMaxMemes.csproj", "{482DA951-DF8E-4D3E-B220-028FB8FBB62F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rimworld", "Rimworld", "{557B5916-01BE-4C53-A778-830D1A40B480}"
 EndProject
@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3", "1.3", "{21D5DF76-54F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E17FD963-4FEE-4632-9B67-055C38EAA9D1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unmaintained", "Unmaintained", "{4C659A78-9DE1-4617-8F56-3CE23995919B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maintained", "Maintained", "{4C659A78-9DE1-4617-8F56-3CE23995919B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4", "1.4", "{040F937A-5A50-4867-B440-433FB6BAC97A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\Unmaintained\MoreMaxMemes\Source\1.4\MoreMaxMemes\MoreMaxMemes.csproj", "{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\Maintained\MoreMaxMemes\Source\1.4\MoreMaxMemes\MoreMaxMemes.csproj", "{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
