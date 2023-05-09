@@ -18,5 +18,9 @@ You can also change the maximum amount of venerated animals (18 venerated animal
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
+		<li>
+			<packageId>Ludeon.Rimworld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
 	</modDependencies>
 </ModMetaData>
