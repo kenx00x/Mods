@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4", "1.4", "{040F937A-5A5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMaxMemes", "Mods\Rimworld\Maintained\MoreMaxMemes\Source\1.4\MoreMaxMemes\MoreMaxMemes.csproj", "{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XenotypeAndIdeologyButtonsTitleScreen", "Mods\Rimworld\Maintained\XenotypeAndIdeologyButtonsTitleScreen\Source\1.4\XenotypeAndIdeologyButtonsTitleScreen\XenotypeAndIdeologyButtonsTitleScreen.csproj", "{6F5081B9-1509-4ED9-A93F-CF8EFFBD7D23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XenotypeAndIdeologyButtonsTitleScreen", "XenotypeAndIdeologyButtonsTitleScreen", "{B07B0897-A937-4C06-AAED-E7556D828E48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{25138967-F09B-44A2-950E-2EA7A1C7EFC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,10 @@ Global
 		{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5081B9-1509-4ED9-A93F-CF8EFFBD7D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5081B9-1509-4ED9-A93F-CF8EFFBD7D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5081B9-1509-4ED9-A93F-CF8EFFBD7D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5081B9-1509-4ED9-A93F-CF8EFFBD7D23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +55,9 @@ Global
 		{4C659A78-9DE1-4617-8F56-3CE23995919B} = {557B5916-01BE-4C53-A778-830D1A40B480}
 		{040F937A-5A50-4867-B440-433FB6BAC97A} = {E17FD963-4FEE-4632-9B67-055C38EAA9D1}
 		{AD0B0378-D9C8-4DFA-9767-0ACE26AF5794} = {040F937A-5A50-4867-B440-433FB6BAC97A}
+		{6F5081B9-1509-4ED9-A93F-CF8EFFBD7D23} = {25138967-F09B-44A2-950E-2EA7A1C7EFC6}
+		{B07B0897-A937-4C06-AAED-E7556D828E48} = {4C659A78-9DE1-4617-8F56-3CE23995919B}
+		{25138967-F09B-44A2-950E-2EA7A1C7EFC6} = {B07B0897-A937-4C06-AAED-E7556D828E48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7A2361B-5DC9-407F-8514-5E3E457D80B4}
