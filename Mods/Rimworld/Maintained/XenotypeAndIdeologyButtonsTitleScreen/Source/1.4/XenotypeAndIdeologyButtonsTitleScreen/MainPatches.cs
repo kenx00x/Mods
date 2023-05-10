@@ -35,9 +35,12 @@ namespace XenotypeAndIdeologyButtonsTitleScreen
 				        Current.Game.Scenario = ScenarioDefOf.Crashlanded.scenario;
 				        Find.Scenario.PreConfigure();
 				        Current.Game.storyteller = new Storyteller(StorytellerDefOf.Cassandra, DifficultyDefOf.Rough);
-				        Current.Game.World = WorldGenerator.GenerateWorld(0.03f, GenText.RandomSeedString(), OverallRainfall.Normal, OverallTemperature.Normal, OverallPopulation.Normal, null, 0f);
-				        Find.GameInitData.ChooseRandomStartingTile();
-				        Find.GameInitData.mapSize = 150;
+						var factions = new List<FactionDef>
+						{
+							FactionDefOf.PlayerColony
+						};
+						Current.Game.World = WorldGenerator.GenerateWorld(0f, "test", OverallRainfall.Normal, OverallTemperature.Normal, OverallPopulation.AlmostNone, factions, 0f);
+						Find.GameInitData.startingTile = 0;
 				        var page = Find.Scenario.GetFirstConfigPage();
 				        page = page.next.next.next;
 						page.prev = null;
