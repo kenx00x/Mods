@@ -2,12 +2,23 @@
 using RimWorld;
 using System.Collections.Generic;
 using RimWorld.Planet;
+using UnityEngine;
 using Verse;
 
 namespace XenotypeAndIdeologyButtonsTitleScreen
 {
 	public class MainPatches
 	{
+		[HarmonyPatch(typeof(MainMenuDrawer), "MainMenuOnGUI")]
+		public class MainMenuDrawer_Patch
+		{
+			[HarmonyPrefix]
+			public static void Prefix(ref Vector2 ___PaneSize)
+			{
+				___PaneSize = new Vector2(450f, 650f);
+			}
+		}
+
 		[HarmonyPatch(typeof(OptionListingUtility), "DrawOptionListing")]
 	    public class OptionListingUtility_Patch
 		{
