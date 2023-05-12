@@ -1,8 +1,9 @@
 ﻿using MelonLoader;
-using Assets.Scripts.Unity;
 using HarmonyLib;
-using Assets.Scripts.Unity.UI_New.Main;
-[assembly: MelonInfo(typeof(BTD6_Unlock_Small_Towers.Class1), "Unlock Small Towers", "1.0.0", "kenx00x")]
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.UI_New.Main;
+
+[assembly: MelonInfo(typeof(BTD6_Unlock_Small_Towers.Class1), "Unlock Small Towers", "1.1.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Unlock_Small_Towers
 {
