@@ -5,7 +5,7 @@ using BTD_Mod_Helper.Api.ModOptions;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Unity.UI_New.Main;
 
-[assembly: MelonInfo(typeof(BTD6_Infinite_Tower_XP.Class1), "Infinite Tower XP", "1.2.0", "kenx00x")]
+[assembly: MelonInfo(typeof(BTD6_Infinite_Tower_XP.Class1), "Infinite Tower XP", "1.3.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace BTD6_Infinite_Tower_XP
 {
