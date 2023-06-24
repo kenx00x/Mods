@@ -58,6 +58,9 @@
     <Reference Include="Il2CppNinjaKiwi.LiNK">
       <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Il2CppNinjaKiwi.LiNK.dll</HintPath>
     </Reference>
+    <Reference Include="Il2CppNinjaKiwi.LiNK.Aot">
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Il2CppNinjaKiwi.LiNK.Aot.dll</HintPath>
+    </Reference>
     <Reference Include="MelonLoader, Version=0.5.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\net6\MelonLoader.dll</HintPath>
