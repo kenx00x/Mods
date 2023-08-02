@@ -1,13 +1,13 @@
-﻿using Assets.Scripts.Models.Bloons;
-using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.Map;
-using HarmonyLib;
+﻿using HarmonyLib;
+using Il2CppAssets.Scripts.Models.Bloons;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Map;
 using MelonLoader;
-[assembly: MelonInfo(typeof(NoLeakDamage.Class1), "No leak damage", "2.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(NoLeakDamage.Main), "No leak damage", "3.0.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 namespace NoLeakDamage
 {
-    public class Class1 : MelonMod
+    public class Main : MelonMod
     {
         public override void OnApplicationStart()
         {
