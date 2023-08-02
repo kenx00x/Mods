@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.10.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\net6\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -43,6 +47,8 @@
     <Reference Include="Il2Cppmscorlib">
       <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
     </Reference>
+    <Reference Include="Il2CppNinjaKiwi.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Il2CppNinjaKiwi.LiNK.Aot, Version=48.1.3.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="MelonLoader">
       <HintPath>E:\steam\steamapps\common\BloonsTD6\MelonLoader\net6\MelonLoader.dll</HintPath>
     </Reference>
@@ -346,6 +352,7 @@
     <Compile Include="Marine.cs" />
     <Compile Include="ParagonSentry.cs" />
     <Compile Include="Pontoon.cs" />
+    <Compile Include="ParagonPowerTotem.cs" />
     <Compile Include="TransformedBaseMonkey.cs" />
     <Compile Include="PortableLake.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

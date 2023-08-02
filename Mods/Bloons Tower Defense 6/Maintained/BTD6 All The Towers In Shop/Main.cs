@@ -3,7 +3,7 @@ using BTD_Mod_Helper.Api.ModOptions;
 using MelonLoader;
 using Main = BTD6_All_The_Towers_In_Shop.Main;
 
-[assembly: MelonInfo(typeof(Main), "All The Towers In Shop", "2.0.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Main), "All The Towers In Shop", "2.1.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace BTD6_All_The_Towers_In_Shop
@@ -27,10 +27,12 @@ namespace BTD6_All_The_Towers_In_Shop
         public static readonly ModSettingInt ShootyTurretTowerV2Price = new ModSettingInt(1000);
         public static readonly ModSettingInt ShootyTurretTowerPrice = new ModSettingInt(250);
         public static readonly ModSettingInt TransFormedBaseMonkeyPrice = new ModSettingInt(7000);
+        public static readonly ModSettingInt ParagonPowerTotem = new ModSettingInt(26000);
 
         public override void OnApplicationStart()
         {
             LoggerInstance.Msg("All The Towers In Shop mod loaded");
+            
         }
     }
 }    
