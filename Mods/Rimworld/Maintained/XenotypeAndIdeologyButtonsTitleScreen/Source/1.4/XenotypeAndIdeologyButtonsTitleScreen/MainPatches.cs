@@ -38,7 +38,9 @@ namespace XenotypeAndIdeologyButtonsTitleScreen
 
 		        if (correctList)
 		        {
-			        optList.Insert(0, new ListableOption("Ideology creator", delegate ()
+					if (XenotypeAndIdeologyButtonsTitleScreen.settings.menuOffset > optList.Count)
+						XenotypeAndIdeologyButtonsTitleScreen.settings.menuOffset = optList.Count;
+			        optList.Insert(XenotypeAndIdeologyButtonsTitleScreen.settings.menuOffset, new ListableOption("Ideology creator", delegate ()
 			        {
 				        Current.ProgramState = ProgramState.Entry;
 				        Current.Game = new Game();
@@ -58,7 +60,7 @@ namespace XenotypeAndIdeologyButtonsTitleScreen
 						page.next = new ClosePage();
 						Find.WindowStack.Add(page);
 			        }, null));
-					optList.Insert(0, new ListableOption("Xenotype creator", delegate ()
+					optList.Insert(XenotypeAndIdeologyButtonsTitleScreen.settings.menuOffset, new ListableOption("Xenotype creator", delegate ()
 					{
 						var menu = new Dialog_CreateXenotype2(0, delegate()
 						{
