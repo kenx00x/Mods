@@ -24,7 +24,7 @@ namespace XenotypeAndIdeologyButtonsTitleScreen
         }
         public override string SettingsCategory()
         {
-	        return "More Max Memes";
+	        return "Xenotype And Ideology Buttons TitleScreen";
         }
 	}
     public class CustomSettings : ModSettings
