@@ -2,12 +2,11 @@
 using HarmonyLib;
 using Il2CppAssets.Scripts.Data;
 using Il2CppAssets.Scripts.Unity;
-using Il2CppAssets.Scripts.Unity.Scenes;
 using Il2CppAssets.Scripts.Unity.UI_New.Main;
 using MelonLoader;
 using Main = BTD6_All_Trophy_Store_Items_Unlocker.Main;
 
-[assembly: MelonInfo(typeof(Main), "All Trophy Store Items Unlocker", "4.3.0", "kenx00x")]
+[assembly: MelonInfo(typeof(Main), "All Trophy Store Items Unlocker", "4.4.0", "kenx00x")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace BTD6_All_Trophy_Store_Items_Unlocker
@@ -34,36 +33,6 @@ namespace BTD6_All_Trophy_Store_Items_Unlocker
                     Game.instance.playerService.Player.AddTrophyStoreItem(item.id);
                     MelonLogger.Msg($"Unlocked {item.id}");
                 }
-            }
-        }
-
-        [HarmonyPatch(typeof(InitialLoadingScreen), "Update")]
-        public class InitialLoadingScreenPatch
-        {
-            [HarmonyPostfix]
-            public static void Postfix()
-            {
-                Modding.isModdedClient = false;
-            }
-        }
-        [HarmonyPatch(typeof(Modding), "CheckForMods")]
-        public class ModdingPatch
-        {
-            [HarmonyPostfix]
-            public static bool Prefix(ref bool __result)
-            {
-                __result = false;
-                return false;
-            }
-        }
-        [HarmonyPatch(typeof(Modding), "IsModdingLibrary")]
-        public class ModdingPatch2
-        {
-            [HarmonyPostfix]
-            public static bool Prefix(ref bool __result)
-            {
-                __result = false;
-                return false;
             }
         }
     }
