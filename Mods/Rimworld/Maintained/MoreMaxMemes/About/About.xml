@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModMetaData>
-	<name>More Max Memes</name>
+	<name>More Max Memes: ported</name>
 	<author>kenx00x</author>
 	<supportedVersions>
 		<li>1.3</li>
 		<li>1.4</li>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
-	<url>https://github.com/kenx00x/Mods/tree/Rimworld/Mods/Rimworld/Maintained/MoreMaxMemes</url>
-	<description>With this mod you can have way more memes with ideology (0-100 memes by default).
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2552870228</url>
+	<packageId>kenx00x.MoreMaxMemes</packageId>
+	<description>One of (in my opinion) best mods for increase the max number of memes. Alas, it hasn't appeared to be updated, so here is a temporary port:
+	It is been ported by: CTH2004
+	
+	P.S. if the author asks, I will remove this, no questions asked. So, if it disapeares, you know why!
+
+Anyways, here's the original (much better than mine) description:
+ 	
+With this mod you can have way more memes with ideology (0-100 memes by default).
 You can change the minimum memes and the maximum memes in the mod settings options.
 You can also change how many memes NPC factions have (1-3 memes by default).
-You can also change the maximum amount of venerated animals (18 venerated animals by default).</description>
-	<packageId>kenx00x.MoreMaxMemes</packageId>
+You can also change the maximum amount of venerated animals (18 venerated animals by default). </description>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -25,7 +33,4 @@ You can also change the maximum amount of venerated animals (18 venerated animal
 			<displayName>Ideology</displayName>
 		</li>
 	</modDependencies>
-	<loadAfter>
-		<li>oskarpotocki.vanillafactionsexpanded.core</li>
-	</loadAfter>
 </ModMetaData>
