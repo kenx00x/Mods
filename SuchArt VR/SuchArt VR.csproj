@@ -6,6 +6,39 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- Deploy to local folder mirroring game structure -->
+  <Target Name="DeployToFolder" AfterTargets="Build">
+    <!-- Create directories in deploy folder -->
+    <MakeDir Directories="$(MSBuildThisFileDirectory)deploy\SuchArt\BepInEx\plugins\SuchArt VR" />
+    <MakeDir Directories="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\Managed" />
+    <MakeDir Directories="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\Plugins" />
+    <MakeDir Directories="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\StreamingAssets" />
+    <MakeDir Directories="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\UnitySubsystems" />
+    
+    <!-- Main plugin DLL to BepInEx/plugins -->
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(MSBuildThisFileDirectory)deploy\SuchArt\BepInEx\plugins\SuchArt VR" />
+    
+    <!-- Libs DLLs to SuchArt_Data/Managed -->
+    <Copy SourceFiles="@(LibsDlls)" DestinationFolder="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\Managed\" />
+    
+    <!-- Native plugins to SuchArt_Data/Plugins -->
+    <Copy SourceFiles="@(LibsPlugins)" DestinationFolder="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\Plugins\" />
+    
+    <!-- StreamingAssets -->
+    <Copy SourceFiles="@(LibsStreamingAssets)" DestinationFolder="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\StreamingAssets\%(RecursiveDir)" />
+    
+    <!-- UnitySubsystems -->
+    <Copy SourceFiles="@(LibsSubsystems)" DestinationFolder="$(MSBuildThisFileDirectory)deploy\SuchArt\SuchArt_Data\UnitySubsystems\%(RecursiveDir)" />
+  </Target>
+
+  <!-- ItemGroups for Libs files to deploy -->
+  <ItemGroup>
+    <LibsDlls Include="$(MSBuildThisFileDirectory)..\Libs\Managed\*.dll" />
+    <LibsPlugins Include="$(MSBuildThisFileDirectory)..\Libs\Plugins\*.*" />
+    <LibsStreamingAssets Include="$(MSBuildThisFileDirectory)..\Libs\StreamingAssets\**\*.*" />
+    <LibsSubsystems Include="$(MSBuildThisFileDirectory)..\Libs\UnitySubsystems\**\*.*" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
     <PackageReference Include="HarmonyX" Version="2.16.1" />
@@ -17,9 +50,11 @@
     </Reference>
     <Reference Include="SteamVR">
       <HintPath>..\Libs\Managed\SteamVR.dll</HintPath>
+      <Private>true</Private>
     </Reference>
     <Reference Include="SteamVR_Actions">
       <HintPath>..\Libs\Managed\SteamVR_Actions.dll</HintPath>
+      <Private>true</Private>
     </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>E:\SteamLibrary\steamapps\common\SuchArt\SuchArt_Data\Managed\Unity.AI.Navigation.dll</HintPath>
