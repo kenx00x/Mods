@@ -1,19 +1,21 @@
-﻿using AS;
-using BepInEx;
+﻿using BepInEx;
 using HarmonyLib;
-using System;
+using SuchArt_VR.Helpers;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Reflection;
+using System;
 using Unity.XR.OpenVR;
 using UnityEngine;
 using UnityEngine.XR.Management;
 using UnityEngine.XR.OpenXR;
+using UnityEngine.XR;
+using Valve.VR;
 
 namespace SuchArtVRMod
 {
-    [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
+    [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
     public class VRPlugin : BaseUnityPlugin
     {
         // Metadata uniquely identifying your mod
@@ -86,11 +88,15 @@ namespace SuchArtVRMod
             managerSettings.InitializeLoaderSync(); ;
 
 
-            XRGeneralSettings.AttemptInitializeXRSDKOnLoad();
-            XRGeneralSettings.AttemptStartXRSDKOnBeforeSplashScreen();
+            var initMethod = AccessTools.Method(typeof(XRGeneralSettings), "AttemptInitializeXRSDKOnLoad");
+            if (initMethod != null)
+                initMethod.Invoke(null, null);
+
+            var startMethod = AccessTools.Method(typeof(XRGeneralSettings), "AttemptStartXRSDKOnBeforeSplashScreen");
+            if (startMethod != null)
+                startMethod.Invoke(null, null);
 
             SteamVR.Initialize(true);
-
 
             SubsystemManager.GetInstances(displays);
             MyDisplay = displays[0];
@@ -99,7 +105,7 @@ namespace SuchArtVRMod
             Logs.WriteInfo("SteamVR hmd modelnumber: " + SteamVR.instance.hmd_ModelNumber);
             HMDModel = SteamVR.instance.hmd_ModelNumber;
 
-            new VRInputManager();
+            //new VRInputManager();
 
             Logs.WriteInfo("Reached end of InitVRLoader");
 
