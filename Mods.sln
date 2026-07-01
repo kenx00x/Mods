@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32112.339
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11925.98 stable
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuchArt VR", "SuchArt VR\SuchArt VR.csproj", "{23A377FA-34F7-41AF-A608-4462F416F1FA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23A377FA-34F7-41AF-A608-4462F416F1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A377FA-34F7-41AF-A608-4462F416F1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A377FA-34F7-41AF-A608-4462F416F1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A377FA-34F7-41AF-A608-4462F416F1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
