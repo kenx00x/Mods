@@ -24,6 +24,9 @@
     <Reference Include="UnityEngine.VRModule">
       <HintPath>E:\SteamLibrary\steamapps\common\SuchArt\SuchArt_Data\Managed\UnityEngine.VRModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>E:\SteamLibrary\steamapps\common\SuchArt\SuchArt_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>E:\SteamLibrary\steamapps\common\SuchArt\SuchArt_Data\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
