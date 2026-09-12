@@ -6,14 +6,14 @@ using Il2CppAssets.Scripts.Unity.UI_New.Main;
 using MelonLoader;
 using Main = BTD6_All_Trophy_Store_Items_Unlocker.Main;
 
-[assembly: MelonInfo(typeof(Main), "All Trophy Store Items Unlocker", "4.4.0", "kenx00x")]
-[assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
+[assembly: MelonInfo(typeof(Main), "All Trophy Store Items Unlocker", "4.5.0", "kenx00x")]
+[assembly: MelonGame("Ninja Kiwi")]
 
 namespace BTD6_All_Trophy_Store_Items_Unlocker
 {
     public class Main : MelonMod
     {
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
             MelonLogger.Msg("All Trophy Store Items Unlocker loaded!");
         }
