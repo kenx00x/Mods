@@ -6,8 +6,8 @@ using Il2CppAssets.Scripts.Unity.UI_New.Main;
 using MelonLoader;
 using Main = BTD6_Infinite_Monkey_Knowledge.Main;
 
-[assembly: MelonInfo(typeof(Main), "Infinite Monkey Knowledge", "3.4.0", "kenx00x")]
-[assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
+[assembly: MelonInfo(typeof(Main), "Infinite Monkey Knowledge", "3.4.1", "kenx00x")]
+[assembly: MelonGame("Ninja Kiwi")]
 namespace BTD6_Infinite_Monkey_Knowledge
 {
     public class Main : BloonsTD6Mod
