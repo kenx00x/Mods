@@ -3,8 +3,8 @@ using BTD_Mod_Helper.Api.ModOptions;
 using HarmonyLib;
 using Il2CppAssets.Scripts.Models.Profile;
 using MelonLoader;
-[assembly: MelonInfo(typeof(BTD6_Max_Player_level.Class1), "Max Player Level", "1.3.0", "kenx00x")]
-[assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
+[assembly: MelonInfo(typeof(BTD6_Max_Player_level.Class1), "Max Player Level", "1.3.1", "kenx00x")]
+[assembly: MelonGame("Ninja Kiwi")]
 namespace BTD6_Max_Player_level
 {
     public class Class1 : BloonsTD6Mod
